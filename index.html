@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Техническая поддержка</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="header-inner">
+        <a href="#home" class="logo">ТехПоддержка</a>
+        <nav>
+            <ul class="menu">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#requests-section">Заявки</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="home" class="hero">
+    <h1>Техническая поддержка</h1>
+    <p>Регистрация заявок на техническое обслуживание компьютеров колледжа.
+       Опишите проблему — специалист примет заявку и отметит её выполнение.</p>
+    <a href="#requests-section" class="hero-button">Оставить заявку</a>
+</section>
+
+<section id="services" class="services">
+    <h2>Наши услуги</h2>
+    <div class="services-list">
+        <div class="service">
+            <h3>Ремонт и диагностика ПК</h3>
+            <p>Компьютер не включается, зависает или работает медленно.</p>
+        </div>
+        <div class="service">
+            <h3>Сеть и Интернет</h3>
+            <p>Настройка подключения, Wi-Fi, сетевых кабелей и доступа.</p>
+        </div>
+        <div class="service">
+            <h3>Принтеры и периферия</h3>
+            <p>Подключение принтеров, сканеров, проекторов и мониторов.</p>
+        </div>
+        <div class="service">
+            <h3>Программное обеспечение</h3>
+            <p>Установка и обновление программ, удаление вирусов.</p>
+        </div>
+    </div>
+</section>
+
+<main id="requests-section">
+
+    <section class="form-block">
+        <h2>Создать заявку</h2>
+
+        <form id="supportForm">
+            <label for="name">ФИО пользователя:</label>
+            <input type="text" id="name" placeholder="Введите ФИО">
+
+            <label for="room">Кабинет:</label>
+            <input type="text" id="room" placeholder="Например: 205">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="student@example.com">
+
+            <label for="category">Категория проблемы:</label>
+            <select id="category">
+                <option value="Не включается компьютер">Не включается компьютер</option>
+                <option value="Проблема с Интернетом">Проблема с Интернетом</option>
+                <option value="Принтер">Принтер</option>
+                <option value="Медленная работа ПК">Медленная работа ПК</option>
+                <option value="Программное обеспечение">Программное обеспечение</option>
+                <option value="Другое">Другое</option>
+            </select>
+
+            <label for="priority">Приоритет:</label>
+            <select id="priority">
+                <option value="Низкий">Низкий</option>
+                <option value="Средний">Средний</option>
+                <option value="Высокий">Высокий</option>
+                <option value="Критический">Критический</option>
+            </select>
+
+            <label for="description">Описание проблемы:</label>
+            <textarea id="description" placeholder="Опишите проблему минимум 10 символов"></textarea>
+
+            <button type="submit">Отправить заявку</button>
+        </form>
+    </section>
+
+    <section class="requests-block">
+        <h2>Зарегистрированные заявки</h2>
+
+        <div class="search-block">
+            <input type="text" id="search" placeholder="Поиск заявки">
+            <button type="button" id="searchButton">Найти</button>
+        </div>
+
+        <label for="filter">Показать:</label>
+        <select id="filter">
+            <option value="Все">Все</option>
+            <option value="Новая">Новые</option>
+            <option value="Выполнено">Выполненные</option>
+        </select>
+
+        <div id="requests">
+            <p class="empty">Заявок пока нет.</p>
+        </div>
+    </section>
+
+</main>
+
+<section id="contacts" class="contacts">
+    <h2>Контакты</h2>
+    <ul class="contact-list">
+        <li><strong>Адрес:</strong> г. Бишкек, КГТУ им. И. Раззакова, колледж</li>
+        <li><strong>Кабинет поддержки:</strong> 101</li>
+        <li><strong>Email:</strong> <a href="mailto:support@example.com">support@example.com</a></li>
+        <li><strong>Время работы:</strong> Пн–Пт, 08:00–17:00</li>
+    </ul>
+</section>
+
+<footer>
+    <p>Студент: Арзибаев Искак Мирланович · Группа: ТОСВТ-9-4-24</p>
+    <p>Сайт размещён на GitHub Pages</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
