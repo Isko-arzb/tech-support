@@ -4,6 +4,6 @@
 
 Лабораторная работа №9 — размещение сайта (вместо AWS EC2 используется GitHub Pages).
 
-**Сайт:** https://isko-arzb.github.io/my-website-project-/
+**Сайт:** https://isko-arzb.github.io/tech-support/
 
 Студент: Арзибаев Искак Мирланович, группа ТОСВТ-9-4-24
